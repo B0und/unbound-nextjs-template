@@ -10,10 +10,14 @@ pre-commit:
       run: npx prettier --write {staged_files} && git add {staged_files}
 
 pre-push:
+  parallel: true
   commands:
     linter:
       glob: "**/*.{js,ts,jsx,tsx}"
-      run: yarn eslint {staged_files} && yarn check-types
+      run: yarn lint
+    types:
+      glob: "**/*.{js,ts,jsx,tsx}"
+      run: yarn check-types
 
     build:
       run: yarn build
