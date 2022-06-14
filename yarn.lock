@@ -314,6 +314,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@evilmartians/lefthook@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-0.8.0.tgz#4d0a71c90177e15eff18da2ddbfb7303c7034f23"
+  integrity sha512-UWY9TKwRekkbl/Wozb+Cin5AY6nn3lQibdnVzyAtxjtdkrfsewG9rIvV5WL8ntBd6ZpxOjEYNiYZHyeB2RxPLA==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.5.tgz"

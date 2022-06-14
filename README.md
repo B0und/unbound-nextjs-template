@@ -4,5 +4,5 @@
 - tailwind
 - jest + RTL
 - playwright
-- lefthook (pre-commit checks)
+- lefthook (pre-commit/push checks)
 - prettier
