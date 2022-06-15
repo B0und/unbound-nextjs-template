@@ -2,7 +2,7 @@
 
 - react query
 - tailwind
-- jest + RTL
+- jest + RTL + msw
 - playwright
 - lefthook (pre-commit/push checks)
 - prettier
