@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import ErrorMessage from "../components/ErrorMessage";
 import { Layout } from "../components/Layout";
+import Loading from "../components/Loading";
 
 import { NextPageWithLayout } from "./_app";
 
@@ -31,7 +32,7 @@ const Index: NextPageWithLayout = () => {
       </Head>
       <p className="text-lg text-amber-400">{t("helloWorld")}</p>
       <h2>{t("apiData")}:</h2>
-      {isLoading && <p>Loading ...</p>}
+      {isLoading && <Loading />}
       <p>{data?.title}</p>
     </main>
   );
