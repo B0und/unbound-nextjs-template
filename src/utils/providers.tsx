@@ -1,15 +1,25 @@
-import React from "react"
-import { QueryClient, QueryClientProvider } from "react-query"
+import React from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
-export const AllProviders = ({ children }: Props) => {
-  const queryClient = new QueryClient()
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // one minute
+      staleTime: 60 * 1000,
+      retry: process.env.NODE_ENV === "production",
+      refetchOnWindowFocus: process.env.NODE_ENV === "production",
+    },
+  },
+});
+
+export const AllProviders = ({ children }: Props) => {
   return (
     <QueryClientProvider client={queryClient} contextSharing={true}>
       {children}
     </QueryClientProvider>
-  )
-}
+  );
+};

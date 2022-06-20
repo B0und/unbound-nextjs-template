@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body,
+  html,
+  #__next {
+    @apply bg-slate-900 text-white w-full h-full scroll-smooth;
+  }
+  ,
+   /* Create a stacking context, without a z-index.
+    This ensures that all portal content (modals and tooltips) will float above the app.
+  */
+  #root,
+  #__next {
+    isolation: isolate;
+  }
+}

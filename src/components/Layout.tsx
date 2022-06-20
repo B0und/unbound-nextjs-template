@@ -4,9 +4,9 @@ import { Navbar } from "./Navbar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="max-w-7xl">
+    <div className="flex flex-col px-6 mx-auto max-w-7xl min-h-screen">
       <Navbar />
-      <main>{children}</main>
+      {children}
       <Footer />
     </div>
   );
