@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 const fullLocaleName = {
   us: "English",
-  ru: "Russian",
+  ru: "Русский",
 };
 
 export default function LocaleSwitcher() {
