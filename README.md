@@ -1,6 +1,6 @@
 # Unbound Next.js template
 
-This is a template of things i would use in my new projects.
+This is a template repo of things i would use in my new projects. (subject to change)
 
 `yarn dev` to run locally.
 
