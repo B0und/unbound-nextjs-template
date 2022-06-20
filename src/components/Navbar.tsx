@@ -21,7 +21,7 @@ export const Navbar = () => {
   const router = useRouter();
 
   return (
-    <header className="flex flex-row justify-between my-9">
+    <header className="flex flex-row flex-wrap justify-between my-9">
       <h1 className="font-medium text-cyan-400">unbound project</h1>
       <ul className="flex gap-8">
         {navLinks.map(({ id, href }) => (
