@@ -1,11 +1,13 @@
-import Head from "next/head";
 import { ReactElement } from "react";
 import { useQuery } from "react-query";
-import { Layout } from "../components/Layout";
-import { NextPageWithLayout } from "./_app";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import ErrorMessage from "../components/ErrorMessage";
+import { Layout } from "../components/Layout";
+
+import { NextPageWithLayout } from "./_app";
 
 export const useTodos = () => {
   return useQuery("todos", () =>

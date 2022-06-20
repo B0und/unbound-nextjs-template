@@ -1,10 +1,12 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { ReactQueryDevtools } from "react-query/devtools";
-import { AllProviders } from "../utils/providers";
 import { ReactElement, ReactNode } from "react";
+import { ReactQueryDevtools } from "react-query/devtools";
 import { NextPage } from "next";
+import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
+
+import { AllProviders } from "../utils/providers";
+
+import "../styles/globals.css";
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

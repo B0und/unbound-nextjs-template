@@ -1,8 +1,9 @@
 import React from "react";
 import clsx from "clsx";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+
 import LocaleSwitcher from "./LocaleSwitcher";
 
 const navLinks = [

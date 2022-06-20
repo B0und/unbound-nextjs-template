@@ -1,5 +1,6 @@
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { Layout } from "../components/Layout";
 
 const About = () => {

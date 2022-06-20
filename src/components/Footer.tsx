@@ -1,5 +1,5 @@
-import { useTranslation } from "next-i18next";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 export const Footer = () => {
   const { t } = useTranslation("common");
