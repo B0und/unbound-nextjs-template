@@ -4,6 +4,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { AllProviders } from "../utils/providers";
 import { ReactElement, ReactNode } from "react";
 import { NextPage } from "next";
+import { appWithTranslation } from "next-i18next";
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -27,4 +28,4 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

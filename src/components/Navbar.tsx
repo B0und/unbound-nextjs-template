@@ -2,18 +2,21 @@ import React from "react";
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const navLinks = [
   {
-    id: "Home",
+    id: "home",
     href: "/",
   },
   {
-    id: "About",
+    id: "about",
     href: "/about",
   },
 ];
 export const Navbar = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
 
   return (
@@ -24,12 +27,13 @@ export const Navbar = () => {
           <li key={id}>
             <Link href={href} passHref>
               <a className={clsx({ "border-b-2 border-amber-400": href === router.pathname })}>
-                {id}
+                {t(id)}
               </a>
             </Link>
           </li>
         ))}
       </ul>
+      <LocaleSwitcher />
     </header>
   );
 };
