@@ -43,6 +43,7 @@ export default function LocaleSwitcher() {
                     height={30}
                     width={30}
                     alt={`${locale} flag`}
+                    layout="fixed"
                   />
                   {fullLocaleName[locale as keyof typeof fullLocaleName]}
                 </a>
