@@ -1,4 +1,4 @@
-import { screen } from "@testing-library/react";
+import { screen } from "testUtils";
 
 import { Layout } from "../components/Layout";
 import Index from "../pages";
